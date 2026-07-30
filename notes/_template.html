@@ -1,0 +1,142 @@
+<!--
+  ============================================================
+  NOTE TEMPLATE — how to publish a new note (3 steps, ~2 min)
+  ============================================================
+
+  1. Copy this whole folder structure:
+       notes/_template.html  ->  notes/your-note-slug/index.html
+     Use a short, lowercase, hyphenated slug. It becomes the URL:
+       maxleohesse.com/notes/your-note-slug/
+
+  2. In the copied file, replace the four marked spots:
+       [TITLE]        the headline
+       [DATE]         e.g. "August 2026"
+       [DESCRIPTION]  one sentence, used for search results and link previews
+       [SLUG]         the folder name you chose
+     Then write your paragraphs where it says WRITE HERE.
+     Each paragraph goes in its own <p>...</p>.
+
+  3. Add the note to the top of the list in notes/index.html:
+
+       <a class="note-item" href="your-note-slug/">
+         <span class="note-item__date">August 2026</span>
+         <h2 class="note-item__title">Your title</h2>
+         <p class="note-item__teaser">One line that makes someone want to read it.</p>
+       </a>
+
+     Newest goes first.
+
+  Then commit and push — it's live in about a minute.
+
+  Tips
+  - Special characters: use &rsquo; for an apostrophe, &mdash; for an em dash,
+    &amp; for an ampersand.
+  - A link inside a paragraph:
+      <a href="https://example.com" target="_blank" rel="noopener" class="text-link">text</a>
+  - If you change css/style.css or js/main.js, bump ?v=10 everywhere, otherwise
+    people keep seeing the cached old version.
+  - Delete this comment block in your copy.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>[TITLE] — Max Hesse</title>
+<meta name="description" content="[DESCRIPTION]">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="../../css/style.css?v=10" rel="stylesheet" type="text/css">
+<meta property="og:title" content="[TITLE] — Max Hesse">
+<meta property="og:description" content="[DESCRIPTION]">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://maxleohesse.com/notes/[SLUG]/">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.className += ' js';</script>
+</head>
+<body class="body is-entering">
+
+<div class="global">
+<div class="black-curtain_transition"><div class="panel__wrapper"><div class="colorpanel-left"></div><div class="colorpanel-right"></div></div></div>
+
+<nav class="nav flex-split is--white">
+  <div class="container-xl is--menu">
+    <a href="../../" class="nav__logo w-inline-block"><span class="nav__wordmark">Max Hesse</span></a>
+    <div class="menu__button" id="menuButton">
+      <div class="line"></div><div class="line"></div><div class="line"></div>
+      <div class="close"><div class="cross is--reverse"></div><div class="cross"></div></div>
+    </div>
+    <div class="nav__menu hide">
+      <a href="../../about/" class="nav__item is-transition">About</a>
+      <a href="../" class="nav__item is-transition w--current">Notes</a>
+      <a href="https://www.linkedin.com/in/maxlhesse" target="_blank" rel="noopener" class="cta menu w-button">LinkedIn</a>
+    </div>
+    <div class="nav__mobile">
+      <div class="menu__line is--top"></div>
+      <a href="../../about/" class="nav__item--wrapper w-inline-block">
+        <div class="nav__item--title">About</div>
+        <div class="faq__arrow is--mobile"><svg class="faq__arrow--image" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="menu__line"></div>
+      </a>
+      <a href="../" class="nav__item--wrapper w-inline-block">
+        <div class="nav__item--title">Notes</div>
+        <div class="faq__arrow is--mobile"><svg class="faq__arrow--image" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="menu__line"></div>
+      </a>
+      <div class="nav__contact-wrapper">
+        <a href="https://www.linkedin.com/in/maxlhesse" target="_blank" rel="noopener" class="nav__contact">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="cursor"><div class="cursor__circle"><svg class="cursor__img" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div></div>
+
+<div class="loader"><div class="nav-bg"><span class="preloader__wordmark">MH</span></div><div class="loader-bottom-img"></div></div>
+</div>
+
+<div class="main">
+  <div class="overflow-hidden">
+
+    <article class="note">
+      <header class="note__head">
+        <div class="container-xs">
+          <span class="note__date">[DATE]</span>
+          <h1 class="note__title">[TITLE]</h1>
+        </div>
+      </header>
+
+      <div class="container-xs">
+        <div class="note__body">
+
+          <!-- WRITE HERE — one <p> per paragraph -->
+          <p>First paragraph.</p>
+          <p>Second paragraph.</p>
+
+        </div>
+
+        <a href="../" class="back-link is-transition">&larr; All notes</a>
+      </div>
+    </article>
+
+    <section class="section is--contact is--black">
+      <div class="container is--contact">
+        <div class="is--centered">
+          <h3 class="text-white">Say hello</h3>
+          <p class="text-white">If any of this resonates &mdash; a question, a project,<br>or something you&rsquo;re building &mdash; I&rsquo;d like to hear from you.</p>
+          <div class="cta__footer-wrapper">
+            <a href="https://www.linkedin.com/in/maxlhesse" target="_blank" rel="noopener" class="cta is--reverse w-button">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>&copy; Max Hesse</span>
+      <a href="https://www.linkedin.com/in/maxlhesse" target="_blank" rel="noopener">LinkedIn</a>
+    </footer>
+
+  </div>
+</div>
+
+<script src="../../js/main.js?v=10"></script>
+</body>
+</html>

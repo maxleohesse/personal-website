@@ -1504,3 +1504,40 @@ body.form-open{overflow:hidden}
   .page-head{padding:18vh 24px 0}
   .layer{margin-bottom:6vh}
 }
+
+/* --- notes: intro line under a page heading --- */
+.page-head__intro{max-width:46ch;margin:2.2em auto 0;font-family:var(--font-body);font-weight:300;
+  font-size:1.05rem;line-height:1.65;color:#5a5a5a;text-align:center}
+
+/* --- notes: the chronological list --- */
+.notes-list{border-top:1px solid #e8e8e8}
+.note-item{display:block;padding:2.1rem 0;border-bottom:1px solid #e8e8e8;text-decoration:none;color:inherit;transition:padding-left .3s ease}
+.note-item:hover{padding-left:.7rem;color:inherit}
+.note-item__date{display:block;font-family:var(--font-body);font-weight:300;font-size:.76rem;
+  letter-spacing:.09em;text-transform:uppercase;color:#9a9a9a;margin-bottom:.5rem}
+.note-item__title{font-family:var(--font-display);font-weight:600;font-size:1.55rem;line-height:1.25;
+  margin:0 0 .35rem;color:var(--black);transition:color .25s}
+.note-item:hover .note-item__title{color:var(--primary)}
+.note-item__teaser{font-family:var(--font-body);font-weight:300;font-size:1rem;line-height:1.6;
+  color:#666;margin:0;max-width:52ch}
+
+/* --- notes: a single note --- */
+.note__head{padding-top:23vh}
+.note__date{display:block;font-family:var(--font-body);font-weight:300;font-size:.76rem;
+  letter-spacing:.09em;text-transform:uppercase;color:var(--primary);margin-bottom:1rem}
+.note__title{font-family:var(--font-display);font-weight:600;line-height:1.1;margin:0;
+  font-size:clamp(2.2rem,5.5vw,3.8rem);color:var(--black)}
+.note__head .container-xs{padding-top:0;padding-bottom:0}
+.note__body{padding-top:1.5rem}
+.note__body p{font-family:var(--font-body);font-weight:300;font-size:1.09rem;line-height:1.8;
+  color:#2a2a2a;margin:0 0 1.5em}
+.note__body p:last-child{margin-bottom:0}
+
+.back-link{display:inline-block;margin-top:4rem;font-family:var(--font-body);font-weight:300;
+  font-size:.92rem;color:#8a8a8a;text-decoration:none;transition:color .2s}
+.back-link:hover{color:var(--primary)}
+
+@media screen and (max-width:767px){
+  .note__head{padding-top:18vh}
+  .page-head__intro{font-size:1rem}
+}

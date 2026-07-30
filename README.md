@@ -8,8 +8,9 @@ Live at [maxleohesse.com](https://maxleohesse.com) — deployed automatically fr
 
 ```
 index.html      home — the one sentence
-about/          who I am, what occupies me, where I'm heading   (planned)
-notes/          writing, newest first                           (planned)
+about/          who I am, what I'm working on, where this is going
+notes/          writing, newest first
+notes/_template.html   copy this to start a new note
 css/style.css   all styling, incl. the interaction layer at the bottom
 js/main.js      all behaviour
 fonts/          self-hosted Fraunces + Inter (SIL Open Font License)
@@ -36,4 +37,8 @@ Then open `http://localhost:8734`.
 
 ## Adding a note
 
-Planned: copy `notes/_template.html`, fill in title, date and text, then add one line to the list in `notes/index.html`.
+1. Copy `notes/_template.html` to `notes/your-slug/index.html`. The slug becomes the URL.
+2. Replace `[TITLE]`, `[DATE]`, `[DESCRIPTION]` and `[SLUG]`, then write your paragraphs where the file says `WRITE HERE` — one `<p>` per paragraph.
+3. Add a matching entry to the top of the list in `notes/index.html` (newest first).
+
+Commit, push, done. Full instructions are in the comment at the top of the template.
