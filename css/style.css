@@ -1476,3 +1476,31 @@ body.form-open{overflow:hidden}
 
 /* --- accent on dark backgrounds needs the lighter tint --- */
 .is--black .heading_style-h5,.section.is--contact .heading_style-h5{color:var(--primary-light)}
+
+/* --- inner pages: heading --- */
+.page-head{padding:23vh 5.56em 0;text-align:center}
+.page-head h5{color:var(--primary);letter-spacing:.18em;text-transform:uppercase;font-family:var(--font-body);font-weight:500;font-size:.72rem;margin:0}
+.about__heading-wrapper{min-height:0;display:block;width:auto}
+.about__heading{position:static;font-family:var(--font-display);font-weight:600;
+  font-size:clamp(3.4rem,11vw,9rem);line-height:1;margin:.3em 0 0;display:block}
+
+/* --- about: the three layers --- */
+.container-xs{width:min(62ch,88vw);padding-top:11vh;padding-bottom:5vh}
+.layer{margin-bottom:7vh}
+.layer:last-child{margin-bottom:0}
+.layer .heading_style-h5{display:block;margin-bottom:1.15em;letter-spacing:.16em;font-weight:500;font-size:.72rem}
+.layer p{font-family:var(--font-body);font-weight:300;font-size:1.06rem;line-height:1.75;color:#2a2a2a;margin:0 0 1.15em}
+.layer p:last-child{margin-bottom:0}
+.text-link{border-bottom:1px solid var(--primary);color:var(--primary)}
+.text-link:hover{border-bottom-color:#0000;color:var(--primary)}
+
+/* --- marquee band --- */
+.section.is--smwyg{margin-top:11vh;margin-bottom:0;padding-bottom:2vh}
+
+/* --- sub-page loader uses the wordmark, centred --- */
+.loader .preloader__wordmark{position:static;inset:auto;font-size:clamp(1.8rem,4vw,2.6rem);opacity:1;transform:none}
+
+@media screen and (max-width:767px){
+  .page-head{padding:18vh 24px 0}
+  .layer{margin-bottom:6vh}
+}
