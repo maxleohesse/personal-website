@@ -1541,3 +1541,13 @@ body.form-open{overflow:hidden}
   .note__head{padding-top:18vh}
   .page-head__intro{font-size:1rem}
 }
+
+/* --- editorial figure with caption --- */
+.figure{margin:2.9rem 0 0}
+.figure__img{display:block;width:100%;height:auto;border-radius:.4rem}
+.figure__caption{margin-top:.95rem;max-width:54ch;font-family:var(--font-body);font-weight:300;
+  font-size:.85rem;line-height:1.55;color:#8a8a8a}
+@media screen and (max-width:767px){
+  .figure{margin-top:2.2rem}
+  .figure__caption{font-size:.8rem}
+}
