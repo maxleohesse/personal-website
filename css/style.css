@@ -1545,8 +1545,9 @@ body.form-open{overflow:hidden}
 /* --- editorial figure with caption --- */
 .figure{margin:2.9rem 0 0}
 .figure__img{display:block;width:100%;height:auto;border-radius:.4rem}
-.figure__caption{margin-top:.95rem;max-width:54ch;font-family:var(--font-body);font-weight:300;
-  font-size:.85rem;line-height:1.55;color:#8a8a8a}
+.figure__caption{margin:.95rem auto 0;max-width:54ch;text-align:center;font-family:var(--font-body);
+  font-weight:300;font-size:.85rem;line-height:1.55;color:#8a8a8a}
+.figure__caption-title{display:block;margin-bottom:.3rem;color:#6a6a6a}
 @media screen and (max-width:767px){
   .figure{margin-top:2.2rem}
   .figure__caption{font-size:.8rem}
