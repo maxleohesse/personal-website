@@ -14,7 +14,8 @@ notes/_template.html   copy this to start a new note
 css/style.css   all styling, incl. the interaction layer at the bottom
 js/main.js      all behaviour
 fonts/          self-hosted Fraunces + Inter (SIL Open Font License)
-images/         portrait and logos
+images/         portrait, logos, link-preview card
+favicon-*.png   browser icon, drawn from the MH monogram
 ```
 
 ## How it works

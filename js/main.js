@@ -12,21 +12,21 @@
     var pre = document.querySelector('.preloader');
     if (pre) {
       pre.classList.add('is-done');
-      setTimeout(function () { pre.classList.add('is-gone'); }, 1000);
+      setTimeout(function () { pre.classList.add('is-gone'); }, 700);
     }
     var loader = document.querySelector('.loader');
     if (loader) {
-      setTimeout(function () { loader.classList.add('is-gone'); }, 950);
+      setTimeout(function () { loader.classList.add('is-gone'); }, 700);
     }
   }
   if (document.readyState === 'complete') {
-    setTimeout(pageReady, isHome ? 900 : 350);
+    setTimeout(pageReady, isHome ? 380 : 220);
   } else {
     window.addEventListener('load', function () {
-      setTimeout(pageReady, isHome ? 900 : 350);
+      setTimeout(pageReady, isHome ? 380 : 220);
     });
     /* safety net if some CDN asset hangs */
-    setTimeout(pageReady, isHome ? 3200 : 2500);
+    setTimeout(pageReady, isHome ? 2200 : 1800);
   }
 
   /* reload when arriving via back/forward cache so the enter animation replays */
